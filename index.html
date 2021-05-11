@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<title>Muneera Cadersa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("graphics/me.jpg");
+  min-height: 250%;
+  min-width: 50%;
+}
+
+.menu {
+  display: none;
+}
+#social-menu{
+  position: center;
+}
+.social-menu ul {
+    padding-left: 22%;
+    display: flex;
+}
+.social-menu ul li {
+    text-align: center;
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    text-align: center;
+    color: #000000;
+    font-size: 35px;
+    line-height: 50px;
+    transition: .5s;
+    align-items: center;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+    text-align: center;
+}
+.social-menu ul li a {
+    position: bottom center;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
+}
+
+</style>
+<body>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">WELCOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT ME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">EXPERIENCE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">PROJECTS & LEADERSHIP</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+
+  </div>
+  <div class="w3-display-middle w3-center">
+
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+
+  </div>
+</header>
+
+
+<div class="w3-sand w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <h4> <p style = "font-family:Georgia;">My name is Muneera Cadersa. I am a sophomore majoring in Data Science and Mathematics at Drexel University with minors in Software Engineering and Management Information Systems. I am expected to graduate in June 2024. </p>  </h4>
+
+    <h6 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">MY ROOTS</span></h6>
+    <h4> <p style = "font-family:Georgia;"> I was born and raised on a tropical island in the Indian Ocean called Mauritius. Mauritius lies east of Madagascar and on the South West of India.</h4>
+    <h4> <p style = "font-family:Georgia;">Mauritius island is surrounded by perfect white sand beaches, surrounded by the stunning blue Indian Ocean, and the center of the island contains mountains and breathtaking scenery, plus almost year-round sunshine. The population of almost 1.3 million is 68 percent Indian, but also comprises Creole, Chinese, French, plus a smattering of British and South Africans.</p></h4>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p style="font-family:Serif"> <p style="font-size:18px"> <i>"Mauritius was made first and then heaven; and heaven was copied after Mauritius”</i></p>
+      <p style="font-family:Serif"> <p style="font-size:16px"> Writer, Humorist and Publisher: Mark Twain</p>
+    </div>
+
+    <style>
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #000000;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 200px) {
+    .text {font-size: 11px}
+  }
+  </style>
+
+
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 10</div>
+    <img src="graphics/img1.jpg" style="width:100%" height="600">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 10</div>
+    <img src="graphics/img2.jpg" style="width:100%" height="600">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 10</div>
+    <img src="graphics/img3.jpg" style="width:100%" height="600">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 10</div>
+    <img src="graphics/img4.jpg" style="width:100%" height="600">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 10</div>
+    <img src="graphics/img5.jpg" style="width:100%" height="600">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 10</div>
+    <img src="graphics/img6.jpg" style="width:100%" height="600">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 10</div>
+    <img src="graphics/img7.jpg" style="width:100%" height="600">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 10</div>
+    <img src="graphics/img8.jpg" style="width:100%" height="600">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 10</div>
+    <img src="graphics/img9.jpg" style="width:100%" height="600">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 10</div>
+    <img src="graphics/img10.jpg" style="width:100%" height="600">
+  </div>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2500); // Change image every 2 seconds
+  }
+  </script>
+
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">EXPERIENCE</span></h5>
+    <ul style="list-style-type:square;">
+
+    <h2> <li> <p style = "font-family:Garamond;"> Ciright Inc. <br> <i>MIS Business Analyst & Product Manager </i> <br>(Sep 2020 - Mar 2021) </li> </h2> </p>
+    <div class="w3-panel w3-leftbar">
+    <h4> <p style = "font-family:Georgia;">  - Evaluated consistency and efficacity of business intelligence data against needs to determine optimal courses of action </p> </h4>
+    <h4> <p style = "font-family:Georgia;"> - Converted data into actionable insights by predicting and modeling future outcomes </p> </h4>
+    <h4> <p style = "font-family:Georgia;"> - Built and configured a virtual communications platform hosting 100+ students, corporate partners, recruiters and guests for college-wide events </p> </h4>
+    <h4> <p style = "font-family:Georgia;"> - Performed market research about Fast Identity Online (FIDO) Authentication to identify market targets, consumer behavior and technological trends for the release of 300+ FIDO cards to test within 6 months </p> </h4>
+    <h4> <p style = "font-family:Georgia;"> - Defined, implemented and monitored Key Performance Indicators (KPIs) for product effectiveness </p> </h4>
+    <h4> <p style = "font-family:Georgia;"> - Led 3 cross-functional teams in a hyper Agile/Scrum development environment to deliver new features and functionalities </p> </h4>
+    <h4> <p style = "font-family:Georgia;"> - Leveraged A/B testing, data analytics, and user research to identify and experiment with new methodologies to improve product performance </p> </h4>
+    </div>
+    <img src="graphics/img19.jpg" style="width:100%" height="600">
+
+
+    </div>
+    <p>
+    <ul style="list-style-type:square;">
+    <h2> <li> <p style = "font-family:Garamond;"> Drexel University <br> <i>Audio/Video Production Technician </i> <br> (Nov 2019 - Mar 2020)</i> </li> </h2>
+    <div class="w3-panel w3-leftbar">
+    <h4> <p style = "font-family:Georgia;"> - Managed the integration of professional Audio/Video systems to meet requirements of weekly university events hosting 200+ participants  </h4>
+    <h4> <p style = "font-family:Georgia;">  - Coordinated with teams of 4-5 trainees to ensure efficient arrangement and maintenance of equipment functionality throughout event duration </h4>
+    <h4> <p style = "font-family:Georgia;">  - Interacted with stakeholders including students and representatives of private organizations to ensure optimal utilization of event spaces while upholding university safety and health policies </h4>
+    </div>
+    <p>
+    <p>
+    <h2> <li> <p style = "font-family:Garamond;"> PricewaterhouseCoopers (PwC) <br> </i> External Auditor </i> <br> (Feb 2019 - Jun 2019)</li> </h2>
+    <div class="w3-panel w3-leftbar">
+    <h4> <p style = "font-family:Georgia;"> - Performed Internal Controls and Substantive Analytical procedures using auditing software packages such as Aura and Vlookup technique in Excel </h4>
+    <h4> <p style = "font-family:Georgia;">  - Documented, analyzed and tested independent key controls</h4>
+    <h4> <p style = "font-family:Georgia;">  - Performed risk assessments, developed audit strategies and financial planning </h4>
+    <h4> <p style = "font-family:Georgia;">  - Liquidated company assets worth $10,000 in the Business Recovery Service Department</h4>
+  </div>
+    <p>
+    <p>
+    <h2> <li> <p style = "font-family:Garamond;"> Cake Adept <br> <i> CEO, Founder </i> <br> (Jan 2015 - Aug 2019)</li> </h2>
+    <div class="w3-panel w3-leftbar">
+    <h4> <p style = "font-family:Georgia;"> - Financial budgeting and planning for at least 1000 customer order </h4>
+    <h4> <p style = "font-family:Georgia;"> - Operated bakery while training and supervising a team of five sous-chef </h4>
+    <h4> <p style = "font-family:Georgia;"> - Managed and performed daily quality control of over 1000 baked goods </h4>
+    </div>
+    <p>
+    <p>
+    <img src="graphics/img13.jpg" style="width:31%">    <img src="graphics/img14.jpg" style="width:31%">   <img src="graphics/img15.jpg" style="width:31%">
+    <img src="graphics/img16.jpg" style="width:31%">    <img src="graphics/img17.jpg" style="width:31%">   <img src="graphics/img18.jpg" style="width:31%">
+    <div class="w3-panel w3-leftbar w3-light-grey">
+    <p style="font-family:Serif"> <i> My passion for baking led me to open my first bakery at the age of 15. I started from scratch and on a small-scale but suddenly found myself fulfilling above 1000 orders while training 5 sous-chefs and handling financial responsibilities. </i> </p>
+
+  </p>
+  </div>
+</div>
+
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">SKILLS</span></h5>
+    <h4> <p style = "font-family:Georgia;"><b>Programming Languages: </b> Python, R, HTML, CSS, SQL </h4>
+    <h4> <p style = "font-family:Georgia;"><b> Big Data & Machine Learning: </b> Python (Anaconda, Scikit-learn, Numpy, Pandas, Matplotlib), Tensorflow</h4>
+    <h4> <p style = "font-family:Georgia;"><b> Data Science & Miscellaneous Technologies: </b>  A/B Testing, <br>Data Science pipelines (cleansing, wrangling, visualization, modeling, interpretation), Hypothesis Testing, APIs, Git, Excel</h4>
+    <h4> <p style = "font-family:Georgia;"><b> Languages: </b> Creole, English, French, Hindi, Urdu </h4>
+
+  </div>
+</div>
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PROJECTS & LEADERSHIP</span></h5>
+    <ul style="list-style-type:square;">
+
+    <h2> <li> <p style = "font-family:Garamond;"> Drexel University, STAR Research Scholar <br> <i> Undergraduate Researcher in Machine Learning</i> <br> (Jul 2020 - Sep 2020)</li> </h2>
+    <h4> <p style = "font-family:Georgia;"> - Analyzed a dataset of 30 parameters using NumPy, Pandas, Scikit-learn, and Matplotlib to categorize breast cancer data as malignant or benign </h4>
+    <h4> <p style = "font-family:Georgia;"> - Trained data using Deep Learning techniques and generated a confusion matrix to visualize the performance of each model </h4>
+    <h4> <p style = "font-family:Georgia;"> - Research concluded that logistic regression could predict whether a tumor is malignant or benign at a 97% accuracy rate
+    <p>
+    <img src="graphics/img20.jpg" style="width:100%">
+
+
+    <h2> <li> <p style = "font-family:Garamond;"> Drexel University, College of Engineering <br> <i> Undergraduate Research Fellow </i> <br> (Jan 2020 - Jun 2020) </li> </h2>
+    <h4> <p style = "font-family:Georgia;"> - Used spiking neural networks simulators such as CARLsim and Neuron to process time series data </h4>
+    <h4> <p style = "font-family:Georgia;"> - Investigated new non-volatile memory architectures to implement machine learning tasks </h4>
+    <h4> <p style = "font-family:Georgia;"> - Developed Operating Systems-like framework to deploy their machine learning programs on neuromorphic systems </h4>
+    <h4> <p style = "font-family:Georgia;"> - Used MNIST database to train various image processing systems while identifying pattern recognition methods </h4>
+    <img src="graphics/img11.jpg" style="width:45%">    <img src="graphics/img12.jpg" style="width:45%">
+    <div class="w3-panel w3-leftbar w3-light-grey">
+    <p style="font-family:Serif"> <i>Neuromorphic Computing Research Presentation at the Drexel University, College of Engineering. The aim of this research presentation was to introduce how spiking neural networks are used to match a human's flexibility and ability to learn from unstructured stimuli with the energy efficiency of the human brain.</i> </p>
+</div>
+
+  <h2> <li> <p style = "font-family:Garamond;"> Drexel University, <br> College of Computing & Informatics	<br> <i> Dean's Ambassador </i>  (Sep 2020 - Present)</li> </h2>
+  <h4> <p style = "font-family:Georgia;"> - Working in collaboration with CCI faculties to host multiple college events gathering 500+ attendees including prospective students, corporate partners, VIP guests and potential donors</h4>
+  <h4> <p style = "font-family:Georgia;"> - Providing academic and non-academic guidance and support to 500+ current and prospective students</h4>
+
+  <h2> <li> <p style = "font-family:Garamond;"> Drexel University, <br> Office of Housing & Residential Life	<br> <i> Residential Programming Assistant </i>  <br>(Apr 2020 - Present)</li> </h2>
+  <h4> <p style = "font-family:Georgia;"> - Managing coordination of event planning and administrative logistics for 500+ students on campus </h4>
+  <h4> <p style = "font-family:Georgia;"> - Supporting university staff in planning, budgeting, and evaluating performance of leadership programs</h4>
+
+  <div class="w3-panel w3-leftbar w3-light-grey">
+  <h3> <li> <p style = "font-family:Garamond;"><i> Drexel Muslim Student Association, <br> Vice President (2021 - 2022) </h3>
+  <h3> <li> <p style = "font-family:Garamond;"> <i>Drexel Student Philanthropy Council (Sep 2020 - Present)</h3>
+  <h3> <li> <p style = "font-family:Garamond;"> <i>Drexel Women in Computing Society (Sep 2019 - Present)</h3>
+  <h3> <li> <p style = "font-family:Garamond;"> <i>Drexel Society of Women Engineer (Sep 2019 - Present)</h3>
+
+
+
+
+
+
+  </div>
+</div>
+
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">RELEVANT COURSEWORK</span></h5>
+    <ul style="list-style-type:square;">
+    <li>INFO101 | Introduction to Computing & Security Technology<br>
+    <li>INFO102 | Introduction to Information Systems<br>
+    <li>INFO103 | Introduction to Data Science (Jupyter Notebook) <br>
+    <li>INFO151 | Web Systems and Services<br>
+    <li>INFO200 | Systems Analysis<br>
+    <li>INF0202 | Data Curation<br>
+    <li>INFO210 | Database Systems (SQL)<br>
+    <li>INFO215 | Data Science Programming<br>
+    <li>CI103   | Computing & Informatics Design <br>
+    <li>CS172   | Computer Programming (Python)<br>
+    <li>CS380   | Machine Learning<br>
+    <li>MATH123 | Calculus III <br>
+    <li>MATH180 | Discrete Computational Structures<br>
+    <li>STAT202 | Business Statistics (R) <br>
+    <li>ECON201 | Principles of Microeconomics<br>
+    <li>ACCT116 | Managerial Accounting Foundations<br>
+    <li>ENGR371 | Neuromorphic Computing<br>
+    <li>ENGR370 | Application, Algorithm & Architecture for Neuromorphic Computing<br>
+    </p>
+
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONNECT WITH ME</span></h5>
+
+
+    <div class="social-menu">
+     <ul>
+        <li> <a href="https://www.facebook.com/muneera.cadersa"><i class="fa fa-facebook"></i></a></li>
+        <li> <a href="https://github.com/MuneeraCadersa"><i class="fa fa-github"></i></a></li>
+        <li>  <a href="https://www.linkedin.com/in/muneeracadersa"><i class="fa fa-linkedin"></i></a></li>
+        <li> <a href="mailto:mbc89@drexel.edu"><i class="fa fa-envelope"></i></a></li>
+        <li> <a href="https://www.instagram.com/muneera.c/"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<!--
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer> -->
+
+
+<p> <center> © Muneera Cadersa 2020</p>
+
+<script>
+// Tabbed Menu
+
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
